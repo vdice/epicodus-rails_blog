@@ -8,16 +8,16 @@
   </small>
 </h2>
 
-<ul>
-  <% @post.tags.each do |tag| %>
-    <%= tag.name %><p>, </p>
-  <% end %>
-</ul>
+<% if @post.tags.any? %>
+  <h4>Tags:
+    <% @post.tags.each do |tag| %>
+      <small>
+        <%= link_to tag.name, tag_path(tag) %>
+      </small>
+    <% end %>
+  </h4>
+<% end %>
 
 <pre>
   <%= @post.body %>
 </pre>
-
-<p>
-  Add Tags coming soon!
-</p>
