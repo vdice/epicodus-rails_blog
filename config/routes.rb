@@ -54,7 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root :to => 'posts#index'
+  root :to => 'static#index'
 
   resources :posts
 
