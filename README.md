@@ -11,15 +11,16 @@ _Using this app, users can:_
 * _View, add, update and delete tags,_
 
 ## Setup
-
 * _Clone this repository_
-* _Install necessary dependencies with: `bundle`_
-* _Setup database with: `rake db:init`_
+* _Run the following commands:_
+```
+bundle         # installs necessary dependencies
+rake db:init   # runs rake db:drop, :create, :migrate, :seed and :test:prepare
+rails s        # starts up the rails server
+```
+* _Then navigate to `localhost:3000`_
 
-  (This will run the `drop`, `create`, `migrate`, `seed`, and `test:prepare` rake commands)
-* _Run specs with: `rspec`_
-* _Launch app with: `rails s`_
-* _Navigate to `localhost:3000`_
+* _You can always run specs with: `rspec`_
 
 ## Technologies Used
 
