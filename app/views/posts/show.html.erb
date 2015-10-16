@@ -1,9 +1,11 @@
 <h2>
-  <%= @post.title %> |
-  <%= link_to 'Edit', edit_post_path(@post) %> |
-  <%= link_to 'Delete', post_path(@post),
-                        :data => {:confirm => "Are you sure you want to delete the '#{@post.title}' post?",
-                                  :method => 'delete'}%>
+  <%= @post.title %>
+  <small> |
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+    <%= link_to 'Delete', post_path(@post),
+                          :data => {:confirm => "Are you sure you want to delete the '#{@post.title}' post?",
+                                    :method => 'delete'}%>
+  </small>
 </h2>
 
 <pre>
