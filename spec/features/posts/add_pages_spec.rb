@@ -6,7 +6,8 @@ describe 'the add a post process' do
   end
 
   it 'can add a post' do
-    visit posts_path
+    visit root_path
+    expect(page).to have_content 'There are no posts, yet!'
     click_on 'Add Post'
     fill_in 'title', :with => 'Alberta Park'
     fill_in 'body', :with => 'Alberta Park is a park located in northeast Portland, Oregon. Acquired in 1921, the park includes a basketball court, dog off-leash area, playground, soccer field, softball field and tennis court, as well as paved and unpaved paths and picnic tables. The park is maintained by a volunteer group known as Friends of Alberta Park.'

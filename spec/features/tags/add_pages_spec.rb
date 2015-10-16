@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe 'the add a tag process' do
   it 'can add a tag' do
-    visit tags_path
+    visit root_path
+    expect(page).to have_content 'There are no tags, yet!'
     click_on 'Add Tag'
     fill_in 'name', :with => 'Frisbee'
     click_on 'Submit'

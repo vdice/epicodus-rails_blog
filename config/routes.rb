@@ -56,11 +56,7 @@ Rails.application.routes.draw do
 
   root :to => 'posts#index'
 
-  resources :posts do
-    resources :tags
-  end
+  resources :posts
 
-  resources :tags do
-    resources :posts
-  end
+  resources :tags
 end
