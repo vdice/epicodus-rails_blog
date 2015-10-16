@@ -1,6 +1,6 @@
-# A Blog of Portland Parks
+# A Rails Blog Template
 
-##### _A blog dedicated to the amazing park and recreation areas within Portland, Oregon, October 16, 2015_
+##### _A simple blog built with Rails, October 16, 2015_
 
 #### By **_Vaughn Dice_**
 
