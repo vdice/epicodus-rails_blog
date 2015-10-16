@@ -1,39 +1,7 @@
 <h2>Welcome to the Portland Parks Blog</h2>
 
-<% if @posts.any? %>
-  <h3>Recent Posts:</h3>
-  <ul>
-    <% @posts.each do |post| %>
-      <li>
-        <%= link_to post.title, post_path(post) %>,
-        <i>
-          <%= post.created_at.strftime("created on %m/%d/%Y") %>
-          <%= post.created_at.strftime(" at %I:%M%p") %>
-        </i>
-      </li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>
-    There are no posts, yet!
-  </p>
-<% end %>
-
-<%= link_to 'Add Post', new_post_path %>
+<%= render 'listing' %>
 
 <hr>
 
-<% if @tags.any? %>
-  <h3>Tags:</h3>
-  <ul>
-    <% @tags.each do |tag| %>
-    <li><%= link_to tag.name, tag_path(tag) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>
-    There are no tags, yet!
-  </p>
-<% end %>
-
-<%= link_to 'Add Tag', new_tag_path %>
+<%= render 'tags/listing' %>
