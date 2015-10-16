@@ -12,7 +12,7 @@ describe 'the edit a post process' do
     expect(page).to have_content @tag.name
     click_on 'Edit'
     fill_in 'title', :with => 'Alberta Park'
-    find(:css, "#post_tag_ids_#{@tag.id}").set(false)
+    find("#post_tag_ids_#{@tag.id}").set(false)
     click_on 'Submit'
     expect(page).to have_content 'Alberta Park'
     expect(page).to_not have_content @tag.name

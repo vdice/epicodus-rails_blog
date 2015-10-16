@@ -9,13 +9,13 @@
 </h2>
 
 <% if @post.tags.any? %>
-  <h4>Tags:
+  <h5>Tags:
     <% @post.tags.each do |tag| %>
-      <small>
+      <button class='tag'>
         <%= link_to tag.name, tag_path(tag) %>
-      </small>
+      </button>
     <% end %>
-  </h4>
+  </h5>
 <% end %>
 
 <pre>

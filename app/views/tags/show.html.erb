@@ -1,5 +1,5 @@
 <h2>
-  <%= @tag.name %>
+  <button class="tag"><span><%= @tag.name %></span></button>
   <small> |
     <%= link_to 'Edit', edit_tag_path(@tag) %> |
     <%= link_to 'Delete', tag_path(@tag),
@@ -8,17 +8,19 @@
   </small>
 </h2>
 
-<% if @tag.posts.any? %>
+<div class="container">
+  <% if @tag.posts.any? %>
 
   <h3>Posts:</h3>
   <ul>
     <% @tag.posts.each do |post| %>
-      <li><%= link_to post.title, post_path(post) %></li>
+    <li><%= link_to post.title, post_path(post) %></li>
     <% end %>
   </ul>
 
-<% else %>
+  <% else %>
   <p>
     There aren't any posts with this tag yet.
   </p>
-<% end %>
+  <% end %>
+</div>

@@ -1,7 +1,11 @@
-<h2>Welcome to (Your Name Here)'s Blog</h2>
+<h2>Welcome to Your Blog</h2>
 
-<%= render 'posts/listing' %>
+<div class="row">
+  <div class="col-xs-8">
+    <%= render 'posts/listing' %>
+  </div>
 
-<hr>
-
-<%= render 'tags/listing' %>
+  <div class="col-xs-4">
+    <%= render 'tags/listing' %>
+  </div>
+</div>

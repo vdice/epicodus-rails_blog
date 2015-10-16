@@ -9,7 +9,11 @@
   </div>
   <div class="form-group">
     <!-- creates a collection of check boxes for all Tag models with value of tag.id and label of tag.name -->
-    <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) %>
+    <strong>Add Tags:</strong><br>
+    <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |b| %>
+      <%= b.label { b.check_box } %>
+      <%= b.object.name %>
+    <% end %>
   </div>
   <%= f.submit 'Submit', :class => 'btn btn-success' %>
 <% end %>
