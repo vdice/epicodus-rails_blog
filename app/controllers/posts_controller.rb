@@ -9,11 +9,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    params[:post][:tag_ids].each do |tag_id|
-      unless tag_id.empty?
-        @post.tags.push(Tag.find(tag_id))
-      end
-    end
 
     if @post.save
       redirect_to posts_path
@@ -33,12 +28,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    @post.tags = []
-    params[:post][:tag_ids].each do |tag_id|
-      unless tag_id.empty?
-        @post.tags.push(Tag.find(tag_id))
-      end
-    end
+    
     if @post.update(post_params)
       redirect_to post_path(@post)
     else
@@ -55,10 +45,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :body, :tag_ids)
-  end
-
-  def collect_tags
-
+    params.require(:post).permit(:title, :body, :tag_ids => [])
   end
 end
