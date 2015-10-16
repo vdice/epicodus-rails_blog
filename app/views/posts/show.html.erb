@@ -20,4 +20,7 @@
 
 <pre>
   <%= @post.body %>
+  <i>
+    <%= @post.created_at.strftime("created on %m/%d/%Y at %I:%M%p") %>
+  </i>
 </pre>

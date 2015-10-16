@@ -2,7 +2,7 @@
   <h3>Tags:</h3>
   <ul>
     <% @tags.each do |tag| %>
-    <li><%= link_to tag.name, tag_path(tag) %></li>
+    <li class="listing"><%= link_to tag.name, tag_path(tag) %></li>
     <% end %>
   </ul>
 <% else %>
