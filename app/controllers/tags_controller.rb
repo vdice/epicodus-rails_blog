@@ -20,6 +20,19 @@ class TagsController < ApplicationController
     @tag = Tag.find(params[:id])
   end
 
+  def edit
+    @tag = Tag.find(params[:id])
+  end
+
+  def update
+    @tag = Tag.find(params[:id])
+    if @tag.update(tag_params)
+      redirect_to tag_path(@tag)
+    else
+      render :edit
+    end
+  end
+
   private
   def tag_params
     params.require(:tag).permit(:name)

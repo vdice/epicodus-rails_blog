@@ -1,4 +1,12 @@
-<h2><%= @tag.name %></h2>
+<h2>
+  <%= @tag.name %>
+  <small> |
+    <%= link_to 'Edit', edit_tag_path(@tag) %> |
+    <%= link_to 'Delete', tag_path(@tag),
+                          :data => {:confirm => "Are you sure you want to delete the '#{@tag.name}' tag?",
+                                    :method => 'delete'}%>
+  </small>
+</h2>
 
 <% if @tag.posts.any? %>
 
