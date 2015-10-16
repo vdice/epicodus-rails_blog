@@ -12,12 +12,15 @@ _Using this app, users can:_
 
 ## Setup
 * _Clone this repository_
-* _Run the following commands:_
+* _Run the following commands: (can be copied into terminal)_
+
 ```
 bundle         # installs necessary dependencies
+postgres &     # starts up the postgres server in background
 rake db:init   # runs rake db:drop, :create, :migrate, :seed and :test:prepare
 rails s        # starts up the rails server
 ```
+
 * _Then navigate to `localhost:3000`_
 
 * _You can always run specs with: `rspec`_
