@@ -1,4 +1,7 @@
-<h2><%= @post.title %></h2>
+<h2>
+  <%= @post.title %>
+  <%= link_to 'Edit', edit_post_path(@post) %>
+</h2>
 
 <pre>
   <%= @post.body %>
