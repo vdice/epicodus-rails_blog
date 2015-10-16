@@ -8,6 +8,12 @@
   </small>
 </h2>
 
+<ul>
+  <% @post.tags.each do |tag| %>
+    <%= tag.name %><p>, </p>
+  <% end %>
+</ul>
+
 <pre>
   <%= @post.body %>
 </pre>

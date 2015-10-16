@@ -1,0 +1,6 @@
+<%= render "layouts/errors", :object => @tag %>
+
+<%= form_for @tag do |f| %>
+  <%= f.text_field :name, :id => 'name', :placeholder => 'Name', :class => 'form-control' %>
+  <%= f.submit 'Submit', :class => 'btn btn-success' %>
+<% end %>
