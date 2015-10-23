@@ -1,11 +1,13 @@
 <h2>
   <button class="tag"><span><%= @tag.name %></span></button>
-  <small> |
-    <%= link_to 'Edit', edit_tag_path(@tag) %> |
-    <%= link_to 'Delete', tag_path(@tag),
-                          :data => {:confirm => "Are you sure you want to delete the '#{@tag.name}' tag?",
-                                    :method => 'delete'}%>
-  </small>
+  <% if current_user && current_user.is_admin %>
+    <small> |
+      <%= link_to 'Edit', edit_tag_path(@tag) %> |
+      <%= link_to 'Delete', tag_path(@tag),
+                            :data => {:confirm => "Are you sure you want to delete the '#{@tag.name}' tag?",
+                                      :method => 'delete'}%>
+    </small>
+  <% end %>
 </h2>
 
 <div class="container">

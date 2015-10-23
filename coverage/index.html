@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-23T12:12:44-07:00">2015-10-23T12:12:44-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-10-23T12:23:25-07:00">2015-10-23T12:23:25-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.7
+         1.72
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>47</b> files in total.
-    <b>414</b> relevant lines. 
-    <span class="green"><b>414</b> lines covered</span> and
+    <b>430</b> relevant lines. 
+    <span class="green"><b>430</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -97,7 +97,7 @@
         <td>26</td>
         <td>26</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>10.0</td>
+        <td>10.6</td>
       </tr>
       
       <tr>
@@ -413,31 +413,31 @@
       <tr>
         <td class="strong"><a href="#922076dda25c646e32fef4686488914eb50e8ac7" class="src_link" title="spec/features/tags/add_pages_spec.rb">spec/features/tags/add_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>20</td>
-        <td>20</td>
+        <td>36</td>
+        <td>25</td>
+        <td>25</td>
         <td>0</td>
-        <td>1.1</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#4e08b7a2942c3eb178a0d4b909d6679b4e7ff2cd" class="src_link" title="spec/features/tags/delete_pages_spec.rb">spec/features/tags/delete_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>20</td>
         <td>13</td>
-        <td>8</td>
-        <td>8</td>
+        <td>13</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#add69dd0c3a1443ede0c667e72da9bb75556d81f" class="src_link" title="spec/features/tags/edit_pages_spec.rb">spec/features/tags/edit_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>22</td>
-        <td>15</td>
-        <td>15</td>
+        <td>30</td>
+        <td>21</td>
+        <td>21</td>
         <td>0</td>
-        <td>1.1</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -1336,8 +1336,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="3">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="3">
+          <span class="hits">5</span>
           
           <code class="ruby">    @tags = Tag.all</code>
         </li>
@@ -1438,8 +1438,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="20">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="20">
+          <span class="hits">5</span>
           
           <code class="ruby">    @tag = Tag.find(params[:id])</code>
         </li>
@@ -1900,8 +1900,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="64" data-linenumber="9">
-          <span class="hits">64</span>
+        <li class="covered" data-hits="68" data-linenumber="9">
+          <span class="hits">68</span>
           
           <code class="ruby">  default_scope {order(&#39;created_at DESC&#39;)}</code>
         </li>
@@ -6541,8 +6541,8 @@
     <h3>spec/features/tags/add_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>20</b> relevant lines. 
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>25</b> relevant lines. 
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6574,64 +6574,64 @@
           <code class="ruby">  before do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
           
           <code class="ruby">    @user = FactoryGirl.create(:user)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @admin = FactoryGirl.create(:user, email: &#39;admin@blog.com&#39;, is_admin: true)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  it &#39;cannot add a tag if not logged in&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit tags_path</code>
+          <code class="ruby">  it &#39;cannot add a tag if not logged in&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to_not have_css &#39;#add-tag&#39;</code>
+          <code class="ruby">    visit tags_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    expect(page).to_not have_css &#39;#add-tag&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">  it &#39;can add a tag&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    login_as(@user, scope: :user)</code>
+          <code class="ruby">  it &#39;cannot add a tag if not admin&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
@@ -6643,61 +6643,61 @@
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &#39;There are no tags, yet!&#39;</code>
+          <code class="ruby">    login_as(@user, scope: :user)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;add-tag&#39;</code>
+          <code class="ruby">    expect(page).to_not have_css &#39;#add-tag&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    fill_in &#39;name&#39;, :with =&gt; &#39;Frisbee&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_on &#39;Submit&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    expect(page).to have_content &#39;Frisbee&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;can add a tag if admin&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(@admin, scope: :user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit tags_path</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &#39;sends an error if required field is missing&#39; do</code>
+          <code class="ruby">    expect(page).to have_content &#39;There are no tags, yet!&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    login_as(@user, scope: :user)</code>
+          <code class="ruby">    click_on &#39;add-tag&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit new_tag_path</code>
+          <code class="ruby">    fill_in &#39;name&#39;, :with =&gt; &#39;Frisbee&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
@@ -6709,7 +6709,7 @@
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &#39;errors&#39;</code>
+          <code class="ruby">    expect(page).to have_content &#39;Frisbee&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -6719,6 +6719,48 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;sends an error if required field is missing&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(@admin, scope: :user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit new_tag_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Submit&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;errors&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">end</code>
@@ -6733,8 +6775,8 @@
     <h3>spec/features/tags/delete_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>13</b> relevant lines. 
+      <span class="green"><b>13</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6766,46 +6808,46 @@
           <code class="ruby">  before do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
           <code class="ruby">    @tag = FactoryGirl.create(:tag)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @admin = FactoryGirl.create(:user, email: &#39;admin@blog.com&#39;, is_admin: true)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  it &#39;can delete a tag&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit tag_path(@tag)</code>
+          <code class="ruby">  it &#39;cannot delete a tag if not admin&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;Delete&#39;</code>
+          <code class="ruby">    visit tag_path(@tag)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to_not have_content &#39;Frisbee&#39;</code>
+          <code class="ruby">    expect(page).to_not have_content &#39;Delete&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -6815,6 +6857,48 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;can delete a tag if admin&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(@admin, scope: :user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit tag_path(@tag)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Delete&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to_not have_content &#39;Frisbee&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
@@ -6829,8 +6913,8 @@
     <h3>spec/features/tags/edit_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>21</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6862,88 +6946,88 @@
           <code class="ruby">  before do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">    @tag = FactoryGirl.create(:tag)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @admin = FactoryGirl.create(:user, email: &#39;admin@blog.com&#39;, is_admin: true)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  it &#39;can edit a tag&#39; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit tag_path(@tag)</code>
+          <code class="ruby">  it &#39;cannot edit a tag if not admin&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;Edit&#39;</code>
+          <code class="ruby">    visit tag_path(@tag)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;name&#39;, :with =&gt; &#39;Disc Golf&#39;</code>
+          <code class="ruby">    expect(page).to_not have_content &#39;Edit&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_on &#39;Submit&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    expect(page).to have_content &#39;Disc Golf&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;can edit a tag if admin&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(@admin, scope: :user)</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &#39;sends an error if required field is missing&#39; do</code>
+          <code class="ruby">    visit tag_path(@tag)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit edit_tag_path(@tag)</code>
+          <code class="ruby">    click_on &#39;Edit&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;name&#39;, :with =&gt; &#39;&#39;</code>
+          <code class="ruby">    fill_in &#39;name&#39;, :with =&gt; &#39;Disc Golf&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
@@ -6955,7 +7039,7 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &#39;errors&#39;</code>
+          <code class="ruby">    expect(page).to have_content &#39;Disc Golf&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
@@ -6965,6 +7049,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;sends an error if required field is missing&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(@admin, scope: :user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit edit_tag_path(@tag)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;name&#39;, :with =&gt; &#39;&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Submit&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;errors&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>

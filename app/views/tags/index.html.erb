@@ -1,4 +1,4 @@
-<% if current_user %>
+<% if current_user && current_user.is_admin %>
   <%= link_to ("<h3 id='add-tag' class='glyphicon glyphicon-plus'></h3 id='add-tag'>").html_safe, new_tag_path, {:id => 'add-tag'} %>
 <% end %>
 
