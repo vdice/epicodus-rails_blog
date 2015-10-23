@@ -1,14 +1,19 @@
 # A Rails Blog Template
 
-##### _A simple blog built with Rails, October 16, 2015_
+##### _A simple blog built with Rails_
 
 #### By **_Vaughn Dice_**
 
 ## Description
 
 _Using this app, users can:_
-* _View, add, update and delete blog posts,_
-* _View, add, update and delete tags,_
+* _Create user accounts,_
+* _View, add, update and delete posts,_
+* _View, add, update and delete their comments for posts,_
+* _View all posts with a given tag_
+
+_Additionally, if user is admin, they can:_
+* _Add, update and delete tags_
 
 ## Setup
 * _Clone this repository_
