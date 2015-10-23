@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  root :to => 'static#index'
+
+  devise_for :users
+  # devise_for :users, controllers: {
+  #   sessions: 'users/sessions'
+  # }
+
+  resources :posts
+  resources :tags
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,10 +62,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  root :to => 'static#index'
-
-  resources :posts
-
-  resources :tags
 end
