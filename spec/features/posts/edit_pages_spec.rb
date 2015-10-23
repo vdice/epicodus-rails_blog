@@ -2,9 +2,11 @@ require 'rails_helper'
 
 describe 'the edit a post process' do
   before do
-    @post = FactoryGirl.create(:post)
+    @user = FactoryGirl.create(:user)
+    @post = FactoryGirl.create(:post, :user_id => @user.id)
     @tag = FactoryGirl.create(:tag)
     @post.tags.push(@tag)
+    login_as(@user, scope: :user)
   end
 
   it 'can edit a post' do

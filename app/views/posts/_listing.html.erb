@@ -7,6 +7,7 @@
     <i>
       <%= post.created_at.strftime("created on %m/%d/%Y") %>
       <%= post.created_at.strftime(" at %I:%M%p") %>
+      <%= " by #{post.user.name}" %>
     </i>
   </li>
   <% end %>

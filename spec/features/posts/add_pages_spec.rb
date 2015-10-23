@@ -2,10 +2,17 @@ require 'rails_helper'
 
 describe 'the add a post process' do
   before do
+    @user = FactoryGirl.create(:user)
     @tag = FactoryGirl.create(:tag)
   end
 
+  it 'cannot add a post if not logged in' do
+    visit posts_path
+    expect(page).to_not have_css '#add-post'
+  end
+
   it 'can add a post' do
+    login_as(@user, scope: :user)
     visit posts_path
     expect(page).to have_content 'There are no posts, yet!'
     click_on 'add-post'
@@ -19,6 +26,7 @@ describe 'the add a post process' do
   end
 
   it 'sends an error if required field is missing' do
+    login_as(@user, scope: :user)
     visit new_post_path
     click_on 'Submit'
     expect(page).to have_content 'errors'
