@@ -2,10 +2,8 @@ Rails.application.routes.draw do
   root :to => 'static#index'
 
   devise_for :users
-  # devise_for :users, controllers: {
-  #   sessions: 'users/sessions'
-  # }
 
+  resources :users
   resources :posts
   resources :tags
   # The priority is based upon order of creation: first created -> highest priority.
