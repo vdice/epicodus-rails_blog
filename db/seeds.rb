@@ -12,5 +12,7 @@ sample_post = Post.create(:user_id => sample_user.id, :title => 'Sample Post', :
 Vivamus sodales ante tortor, vitae luctus ligula fringilla a. Suspendisse tempus elit in elit fringilla, ut elementum nunc elementum. Aliquam nulla nisi, imperdiet sed molestie eu, viverra quis nisi. Donec vehicula massa mi, laoreet iaculis risus congue sed. Etiam nibh erat, accumsan eu neque et, aliquam ultricies turpis. Vivamus convallis urna ac elit faucibus, et lobortis purus lacinia. Integer in dolor velit.')
 
 sample_tag = Tag.create(:name => 'Sample Tag')
-
 sample_post.tags.push(sample_tag)
+
+sample_comment = Comment.create(:content => 'Standing tall!', :user_id => sample_user.id, :commentable_type => 'Post', :commentable_id => sample_post.id)
+sample_post.comments.push(sample_comment)

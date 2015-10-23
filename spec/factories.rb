@@ -13,4 +13,8 @@ FactoryGirl.define do
   factory :tag do
     name 'Frisbee'
   end
+
+  factory :comment do
+    content 'Let\'s play frisbee!'
+  end
 end

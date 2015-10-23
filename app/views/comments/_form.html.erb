@@ -1,0 +1,11 @@
+<%= render "layouts/errors", :object => @comment %>
+
+<%= form_for [commentable, @comment] do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.hidden_field :commentable_id, value: commentable.id %>
+  <%= f.hidden_field :commentable_type, value: commentable_type %>
+  <div class="form-group">
+    <%= f.text_area :content, :id => 'content', :placeholder => 'Content', :class => 'form-control' %>
+  </div>
+  <%= f.submit :class => 'btn btn-success' %>
+<% end %>
