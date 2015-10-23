@@ -8,6 +8,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'devise'
 
 group :development do
   gem 'byebug'
@@ -17,12 +18,15 @@ group :development do
 end
 
 group :test, :development do
+  gem 'hirb'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
-  gem 'capybara'
 end
 
 group :test do
+  gem 'capybara'
   gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end

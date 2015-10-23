@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'the delete a tag process' do
   before do
-    @tag = Tag.create(:name => 'Frisbee')
+    @tag = FactoryGirl.create(:tag)
   end
 
   it 'can delete a tag' do

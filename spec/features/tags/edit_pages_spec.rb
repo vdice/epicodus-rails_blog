@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'the edit a tag process' do
   before do
-    @tag = Tag.create(:name => 'Frisbee')
+    @tag = FactoryGirl.create(:tag)
   end
 
   it 'can edit a tag' do
@@ -14,7 +14,8 @@ describe 'the edit a tag process' do
   end
 
   it 'sends an error if required field is missing' do
-    visit new_tag_path
+    visit edit_tag_path(@tag)
+    fill_in 'name', :with => ''
     click_on 'Submit'
     expect(page).to have_content 'errors'
   end

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'the add a post process' do
   before do
-    @tag = Tag.create(:name => 'Frisbee')
+    @tag = FactoryGirl.create(:tag)
   end
 
   it 'can add a post' do
